@@ -2,6 +2,8 @@
 Changelog
 =========
 
+* :bug:`794` Apply finishing touches to support ecdsa-sha2-nistp384
+  and ecdsa-sha2-nistp521 host keys. Thanks to ``@ncoult`` for the report.
 * :bug:`683` Make `util.log_to_file()` append instead of replace. Thanks
   to ``@vlcinsky`` for the report.
 * :release:`2.1.2 <2017-02-20>`
