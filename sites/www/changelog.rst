@@ -2,6 +2,10 @@
 Changelog
 =========
 
+* :bug:`865` SSHClient requests the type of host key it has (e.g. from
+  known_hosts) and does not consider a different type to be a "Missing"
+  host key. This fixes the case where an ecdsa key is in known_hosts and
+  the server also has an rsa host key. Thanks to Pierce Lopez.
 * :bug:`683` Make `util.log_to_file()` append instead of replace. Thanks
   to ``@vlcinsky`` for the report.
 * :release:`1.18.2 <2017-02-20>`
